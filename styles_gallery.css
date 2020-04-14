@@ -1,0 +1,131 @@
+/* color scheme
+1e56a0
+f6f6f6
+163172
+d6e4f0
+*/
+
+html{
+    background-color: #f6f6f6;
+}
+
+.Company{
+    font-size: 60px;
+    font-family: 'Zhi Mang Xing', cursive;
+    text-align: center;
+    width: 100%;
+    color: black;
+    background-color:#1e56a0;
+}
+.nav-bar{
+    list-style-type: none;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-element{
+    float: left;
+}
+
+.nav-link{
+    display: block;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+}
+
+.nav-link.nav-element:hover{
+    background-color: grey;
+}
+
+.nav-text{
+    text-decoration: none;
+    color: white;
+    font-family: "Righteous",Montserrat, monospace;
+    font-size: 15px;
+}
+
+.container{
+    border-radius: 5px;
+    background-color: #d6e4f0;
+    padding: 10px 10px 10px 10px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px 120px;
+    margin: 50px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Pacifico",cursive;
+    padding: 20px;
+}
+
+.grid-item-1{
+    grid-row: 1/span 2;
+    grid-column: 1/span 2;
+    background-color: blueviolet;
+    background-image: url("./images/gallery/wedding03.jpg");
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.grid-item-2{
+    grid-row: 1/span 2;
+    grid-column: 3/span 2;
+    background-color:darksalmon;
+    background-image: url("./images/gallery/kids03.jpg");
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.grid-item-3 {
+    grid-row: 1/span 2;
+    grid-column: 5/span 2;
+    background-color: orchid;
+    background-image: url("./images/gallery/fashion02.jpg");
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.grid-item-4{
+    grid-row: 3/span 2;
+    grid-column:2/span 2;
+    background-color: chocolate;
+    background-image: url("./images/gallery/commercial03.jpg");
+    background-size: cover;
+    opacity: 0.5;
+}
+
+
+.grid-item-5{
+    grid-row: 3/span 2;
+    grid-column: 4/span 2;
+    background-color: cyan;
+    background-image: url("./images/gallery/nature01.jpg");
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer{
+    font-size: 40px;
+    font-family: 'Lacquer', cursive;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    background-color:#163172;
+}
+.grid-container p{
+    opacity:1;
+}

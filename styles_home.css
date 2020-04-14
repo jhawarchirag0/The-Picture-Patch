@@ -1,0 +1,102 @@
+/* color scheme
+1e56a0
+f6f6f6
+163172
+d6e4f0
+*/
+
+html{
+    background-color: #f6f6f6;
+}
+
+.Company{
+    font-size: 60px;
+    font-family: 'Zhi Mang Xing', cursive;
+    text-align: center;
+    width: 100%;
+    color: black;
+    background-color:#1e56a0;
+}
+.nav-bar{
+    list-style-type: none;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-element{
+    float: left;
+}
+
+.nav-link{
+    display: block;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+}
+
+.nav-link.nav-element:hover{
+    background-color: grey;
+}
+
+.nav-text{
+    text-decoration: none;
+    color: white;
+    font-family: "Righteous",Montserrat, monospace;
+    font-size: 15px;
+}
+
+#slideshow {
+    margin: 30px auto;
+    position: relative;
+    width: 700px;
+    height: 500px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.container{
+    border-radius: 5px;
+    background-color: #d6e4f0;
+    padding: 10px 10px 10px 10px;
+}
+
+.we-are{
+    font-family: 'Molle', cursive;
+    font-size:30px;
+}
+
+.we-do{
+    font-family: 'Molle', cursive;
+    font-size:30px;
+}
+
+.we-do-data{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+.we-are-data{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+.footer{
+    font-size: 40px;
+    font-family: 'Lacquer', cursive;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    background-color:#163172;
+}

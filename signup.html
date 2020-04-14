@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./styles2-signup.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Molle:400i|Pacifico|Lacquer|Righteous|Zhi+Mang+Xing&display=swap" rel="stylesheet"> <script src='./scripts-signup.js'></script>
+ <title>Sign in</title>
+</head>
+<body>
+    <header class="Company">The Picture Patch</header>
+    <ul class = "nav-bar">
+        <li class = "nav-element nav-link"><a class = "nav-text" href = "home.html">Home</a></li>
+        <li class = "nav-element nav-link"><a class = "nav-text" href = "gallery.html">Catalogue</a></li>
+        <li class = "nav-element nav-link"><a class = "nav-text" href = "#">Booking</a></li>
+        <li class = "nav-element nav-link"><a class = "nav-text" href = "#">Sign Up/Log in</a></li>
+    </ul>
+    <div class="container">
+        <h2 class='signup' align='center'>
+            Sign Up
+        </h2>
+        <form class='form2'>
+            <input class='fn' id="fn"
+            type='text' placeholder="First Name" />
+            <input class='ln' id="ln" type='text' placeholder="Last Name" />
+            <!--<input class='usrnm' type='text' placeholder="Username" />-->
+            <input class='emailid' id="email" type='Email' placeholder="Email Address" />
+            <input class='pss' type='Password' id="pss" placeholder="Password" />
+            <center>
+                <p id="pass-req">Password must contain min 8 characters, 1 uppercase, 1 lowercase, 1 number and 1 special character</p>
+            </center>
+            <button class="submit" type="button" align="center" onclick="validateForm();return false">Sign up</button><br>
+        </form>
+        <h2 class='redirect-sign-in' align='center'> 
+            <a class='redirect2' href='./login.html' style="text-decoration: none">Already joined?Sign In</a>
+        </h2 >
+    </div>
+    <footer class="footer">
+        Made by Chirag
+    </footer>
+</body>
+</html>
