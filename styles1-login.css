@@ -1,26 +1,65 @@
-    body {
-        background-color: #F3EBF6;
-        font-family: 'Ubuntu', sans-serif;
-    }
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    background-color: #d6e4f0;
+}
+
+.Company{
+    font-size: 60px;
+    font-family: 'Zhi Mang Xing', cursive;
+    text-align: center;
+    width: 100%;
+    color: black;
+    background-color:#1e56a0;
+}
+.nav-bar{
+    list-style-type: none;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-element{
+    float: left;
+}
+
+.nav-link{
+    display: block;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+}
+
+.nav-link.nav-element:hover{
+    background-color: grey;
+}
+
+.nav-text{
+    text-decoration: none;
+    color: white;
+    font-family: "Righteous",Montserrat, monospace;
+    font-size: 15px;
+}
     
-    .main {
-        background-color: #FFFFFF;
-        width: 400px;
-        height: 430px;
-        margin: 7em auto;
-        border-radius: 1.5em;
-        box-shadow: 0px 15px 35px 2px rgba(0, 0, 0, 0.14);
-    }
+.container {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 480px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
     
-    .sign {
-        padding-top: 40px;
-        color: #8C55AA;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: bold;
-        font-size: 23px;
-    }
+.signin {
+    padding-top: 42px;
+    color: #1e56a0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px; 
+}
     
-    .un {
+.un {
     width: 76%;
     color: rgb(38, 50, 56);
     font-weight: 700;
@@ -38,14 +77,14 @@
     text-align: center;
     margin-bottom: 27px;
     font-family: 'Ubuntu', sans-serif;
-    }
+}
     
-    form.form1 {
-        padding-top: 40px;
-    }
+form.form1 {
+    padding-top: 40px;
+}
     
-    .pass {
-            width: 76%;
+.pass {
+    width: 76%;
     color: rgb(38, 50, 56);
     font-weight: 700;
     font-size: 14px;
@@ -62,69 +101,72 @@
     text-align: center;
     margin-bottom: 27px;
     font-family: 'Ubuntu', sans-serif;
-    }
+}
     
    
-    .un:focus, .pass:focus {
-        border: 2px solid rgba(0, 0, 0, 0.18) !important;
-        
-    }
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18)        
+}
     
-    .submit {
-      cursor: pointer;
-        border-radius: 5em;
-        color: #fff;
-        background: linear-gradient(to right, #9C27B0, #E040FB);
-        border: 0;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        font-family: 'Ubuntu', sans-serif;
-        margin-left: 35%;
-        font-size: 13px;
-        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
-    }
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, rgb(69, 39, 176), rgb(138, 72, 243));
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
     
-    .forgot {
-        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-        color: #E1BEE7;
-        padding-top: 5px;
-    }
-    
-    a {
-        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-        color: #E1BEE7;
-        text-decoration: none
-    }
-    
-    @media (max-width: 600px) {
-        .main {
-            border-radius: 0px;
-        }}
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+}}
 
-    #message
-    {width: 76%;
-        color: black;
-        font-weight: 700;
-        font-size: 17px;
-        letter-spacing: 1px;
-        outline: none;
-        margin-top: 12px;
-        margin-left: 46px;        
-        text-align: center;
-        margin-bottom: 17px;
-        font-family: 'Ubuntu', sans-serif;
-    }
+#message{
+    width: 76%;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1px;
+    outline: none;
+    margin-top: 12px;
+    margin-left: 46px;        
+    text-align: center;
+    margin-bottom: 17px;
+    font-family: 'Ubuntu', sans-serif;
+}
 
-    .redirect-sign-up{
-        color: black;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: bold;
-        font-size: 17px;
-        margin-top: 22px;
-    }
+.forgot{
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 26px;
+    text-decoration: none;
+}
 
-    .redirect1{
-        color: black;
-    }
+.redirect-sign-up{
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 26px;
+    text-decoration: none;
+}
+
+.footer{
+    font-size: 40px;
+    font-family: 'Lacquer', cursive;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    background-color:#163172;
+}

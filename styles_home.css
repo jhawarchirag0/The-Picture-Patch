@@ -46,24 +46,21 @@ html{
     font-size: 15px;
 }
 
-#slideshow {
+.slideshow {
     margin: 30px auto;
     position: relative;
     width: 700px;
-    height: 500px;
-    padding: 10px;
+    height: 469px;
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 17px 15px;
 }
 
-#slideshow > div {
+.slideshow-ele {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
+    position: absolute;
 }
 
 .container{

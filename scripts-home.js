@@ -1,15 +1,14 @@
-const slides = document.querySelector('.slideshow');
-const images = document.querySelectorAll('.slideshow img');
+var slideIndex = 0;
 
-const prev = document.querySelector("#prevBtn");
-const next = document.querySelector("#nextBtn");
-
-let counter = 1;
-const size = images[0].clientWidth;
-
-// slides.styles.transform = "translateX("+ (-size*counter)+"px)"; 
-
-
-function prevImage(){
-    
+window.onload= function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+    console.log(10);
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 2000); 
 }
