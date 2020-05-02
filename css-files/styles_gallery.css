@@ -69,7 +69,7 @@ html{
     grid-row: 1/span 2;
     grid-column: 1/span 2;
     background-color: blueviolet;
-    background-image: url("./images/gallery/wedding03.jpg");
+    background-image: url("../images/gallery/wedding03.jpg");
     background-size: cover;
     opacity: 0.5;
 }
@@ -78,7 +78,7 @@ html{
     grid-row: 1/span 2;
     grid-column: 3/span 2;
     background-color:darksalmon;
-    background-image: url("./images/gallery/kids03.jpg");
+    background-image: url("../images/gallery/kids03.jpg");
     background-size: cover;
     opacity: 0.5;
 }
@@ -87,7 +87,7 @@ html{
     grid-row: 1/span 2;
     grid-column: 5/span 2;
     background-color: orchid;
-    background-image: url("./images/gallery/fashion02.jpg");
+    background-image: url("../images/gallery/fashion02.jpg");
     background-size: cover;
     opacity: 0.5;
 }
@@ -96,7 +96,7 @@ html{
     grid-row: 3/span 2;
     grid-column:2/span 2;
     background-color: chocolate;
-    background-image: url("./images/gallery/commercial03.jpg");
+    background-image: url("../images/gallery/commercial03.jpg");
     background-size: cover;
     opacity: 0.5;
 }
@@ -106,7 +106,7 @@ html{
     grid-row: 3/span 2;
     grid-column: 4/span 2;
     background-color: cyan;
-    background-image: url("./images/gallery/nature01.jpg");
+    background-image: url("../images/gallery/nature01.jpg");
     background-size: cover;
     opacity: 0.5;
 }
@@ -118,8 +118,9 @@ html{
 }
 
 .footer{
-    font-size: 40px;
-    font-family: 'Lacquer', cursive;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Manrope:wght@300","Jost", cursive;
     text-align: center;
     width: 100%;
     padding: 10px;
