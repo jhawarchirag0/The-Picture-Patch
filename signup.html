@@ -18,11 +18,11 @@
         <h2 class='signup' align='center'>
             Sign Up
         </h2>
-        <form class='form2' action="php-files/validate-sign-in.php">
-            <input id='fn' type='text' placeholder="First Name" />
-            <input id='ln' type='text' placeholder="Last Name" />
-            <input id="contact" type="number" placeholder="Contact Number" />
-            <input id="age" type="number" placeholder="Age" />
+        <form class='form2' action="">
+            <input id='fn' type='text' placeholder="First Name" name="fn" />
+            <input id='ln' type='text' placeholder="Last Name" name="ln" />
+            <input id="contact" type="number" name="contact" placeholder="Contact Number" />
+            <input id="age" type="number" name="age" placeholder="Age" />
             <div id="gender">
                 <label>Gender :</label>
                 <br><br>
@@ -33,15 +33,14 @@
                 <input type="radio" id="transgender" name="gender" value="transgender">
                 <label for="transgender">Transgender</label>
             </div>
-            <!-- <input id="city" type='text' placeholder="City" /> -->
-            <input id='emailid' type='Email' placeholder="Email Address" />
-            <input id="username" type='text' placeholder="Username" />
-            <input type='Password' id="pss" placeholder="Password" />
-            <input type='Password' id="repss" placeholder="Retype Password" />
+            <input id='emailid' type='Email' name="emailid" placeholder="Email Address" />
+            <input id="username" type='text' name="username" placeholder="Username" />
+            <input type='Password' id="pss" name="pss" placeholder="Password" />
+            <input type='Password' id="repss" name="repss" placeholder="Retype Password" />
             <!-- <center>
                 <p id="pass-req">Password must contain min 8 characters, 1 uppercase, 1 lowercase, 1 number and 1 special character</p>
             </center> -->
-            <button class="submit" type="button" align="center" onclick="validateForm();return false">Sign up</button><br>
+            <input type="submit" class="submit" name="submit" align="center" value="Sign up"> <br>
         </form>
         <h2 class='redirect-sign-in' align='center'> 
             <a class='redirect2' href='./login.html' style="text-decoration: none">Already joined?Sign In</a>
@@ -50,5 +49,6 @@
     <!-- <footer class="footer">
         Made by Chirag
     </footer> -->
+
 </body>
 </html>
