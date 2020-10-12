@@ -16,18 +16,17 @@
     </ul>
     <div class="container">
         <h2 class='signin' align='center'>
-            Sign In
+            Log In
         </h2>
-        <form class="form1">
+        <form class="form1" method="post" action="php-files/cookie-login.php">
           
-          <input class="un" id = "idd" type="text" align="center" placeholder="Username">
+          <input class="un" type="text" name="un" align="center" placeholder="Username">
     
-          <input class="pass" type="password" id = "pss" align="center" placeholder="Password">
-    
-          <button class="submit" type="button" align="center">Sign in</button><br><br>
+          <input class="pass" type="password" name="pass" align="center" placeholder="Password">
+
+          <input type="submit" class="submit" align="center" value="Log in"><br><br>
     
           <div id="message">Welcome Back!</div>
-    
           
             <h2 align='center'> 
                 <a class="forgot" href="#">Forgot Password?</a>
@@ -38,8 +37,8 @@
           </h2 >
         </div>
     </div>
-    <footer class="footer">
+    <!-- <footer class="footer">
         Made by Chirag
-    </footer>
+    </footer> -->
 </body>
 </html>
