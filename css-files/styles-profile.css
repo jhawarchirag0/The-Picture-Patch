@@ -68,3 +68,54 @@ html{
     background-color: #d6e4f0;
     padding: 10px 10px 10px 10px;
 }
+
+.profile-name{
+    margin: auto;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.des1,.des2{
+    width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.description{
+    margin: auto;
+    width: 400px;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+    padding: 20px;
+    padding-top: 50px;
+    width: 500px;
+    height: 250px;
+    font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+}
+
+.profile-image{
+    width: 200px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.image-box{
+    padding: 20px;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.name-and-image{
+    display: flex;
+    justify-content: space-around;
+}
