@@ -5,10 +5,6 @@ f6f6f6
 d6e4f0
 */
 
-html{
-    background-color: #f6f6f6;
-}
-
 .Company{
     font-size: 60px;
     font-family: 'Zhi Mang Xing', cursive;
@@ -65,7 +61,7 @@ html{
 
 .container{
     border-radius: 5px;
-    background-color: #d6e4f0;
+    background-color: #e6e6ff;
     padding: 10px 10px 10px 10px;
 }
 
@@ -75,6 +71,7 @@ html{
     height: 100px;
     display: flex;
     justify-content: center;
+    font-weight: 600;
     font-size: 40px;
 }
 
@@ -96,7 +93,7 @@ html{
 
 .name{
     padding: 20px;
-    padding-top: 50px;
+    padding-top: 90px;
     width: 500px;
     height: 250px;
     font-family: 'Open Sans', sans-serif;
@@ -107,15 +104,105 @@ html{
     width: 200px;
     height: 220px;
     border-radius: 50%;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .image-box{
     padding: 20px;
-    padding-top: 50px;
+    padding-top: 60px;
     align-items: center;
 }
 
 .name-and-image{
     display: flex;
     justify-content: space-around;
+}
+
+.profile-settings{
+    width: 65%;
+    background-color: white;
+    margin-left: 5%;
+    margin-top: 30px;
+    box-shadow: 2px 2px 10px #1e56a0;
+    border-radius: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card{
+    height: 70px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.my-account{
+    width: 150px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: 570;
+}
+
+.update-button{
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.update-profile{
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 15px;
+    background-color: #000099;
+    color: #CCFFFF;
+    padding: 5px 10px;
+    border: none;
+    outline:none;
+}
+
+.update-profile:active {
+    transform: translateY(1px);
+}
+
+.value-title{
+    font-size: 17px;
+    margin: 15px 20px 10px 20px;
+    font-weight: bold;
+    color: #1a001a;
+}
+
+.value-box{
+    border: none;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border-color: whitesmoke;
+    margin: 10px 15px;
+    box-shadow: 1px 1px 5px #1e56a0;
+}
+
+.part{
+    width: 100%;
+}
+
+.user-info,.contact-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-details{
+    background-color: #e9ecef;
+}
+
+.detail-title{
+    padding: 20px;
+    color: #1f1f2e;
+    font-weight: bold;
+}
+
+.line{
+    padding-top: 15px;
+    margin: 10px 5%;
+}
+
+hr{
+    border-top: 2px solid #8c8b8b;
 }
