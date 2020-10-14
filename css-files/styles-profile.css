@@ -11,7 +11,7 @@ d6e4f0
     text-align: center;
     width: 100%;
     color: black;
-    background-color:#1e56a0;
+    background-color:#163172 ;
 }
 .nav-bar{
     list-style-type: none;
@@ -61,7 +61,7 @@ d6e4f0
 
 .container{
     border-radius: 5px;
-    background-color: #e6e6ff;
+    background-color: #d6e4ff ;
     padding: 10px 10px 10px 10px;
 }
 
@@ -75,27 +75,8 @@ d6e4f0
     font-size: 40px;
 }
 
-.des1,.des2{
-    width: 400px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-}
-
-.description{
-    margin: auto;
-    width: 400px;
-    height: 100px;
-    flex-direction: column;
-    align-items: center;
-}
-
 .name{
-    padding: 20px;
-    padding-top: 90px;
-    width: 500px;
-    height: 250px;
+    padding: 135px 0px 40px 130px;
     font-family: 'Open Sans', sans-serif;
     flex-direction: column;
 }
@@ -119,13 +100,17 @@ d6e4f0
 }
 
 .profile-settings{
-    width: 65%;
+    width: 58%;
     background-color: white;
     margin-left: 5%;
     margin-top: 30px;
     box-shadow: 2px 2px 10px #1e56a0;
     border-radius: 12px;
     font-family: 'Open Sans', sans-serif;
+}
+
+.profile-box{
+    display: flex;
 }
 
 .card{
@@ -139,7 +124,7 @@ d6e4f0
     font-size: 20px;
     padding-top: 20px;
     padding-left: 20px;
-    font-weight: 570;
+    font-weight: 700;
 }
 
 .update-button{
@@ -176,7 +161,16 @@ d6e4f0
     border-radius: 10px;
     border-color: whitesmoke;
     margin: 10px 15px;
+    padding-left: 20px;
     box-shadow: 1px 1px 5px #1e56a0;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #1f1f2e;
+    font-weight: 500;
+}
+
+input:focus{
+    outline:none;
 }
 
 .part{
@@ -184,16 +178,19 @@ d6e4f0
 }
 
 .user-info,.contact-info{
+    padding-left: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 .profile-details{
-    background-color: #e9ecef;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #d6e4f0;
 }
 
 .detail-title{
     padding: 20px;
+    padding-left: 35px;
     color: #1f1f2e;
     font-weight: bold;
 }
@@ -205,4 +202,50 @@ d6e4f0
 
 hr{
     border-top: 2px solid #8c8b8b;
+}
+
+.booking-data{
+    width: 28%;
+    height: 685px;
+    background-color: white;
+    margin-left: 4%;
+    margin-top: 30px;
+    box-shadow: 2px 2px 10px #1e56a0;
+    border-radius: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card2{
+    margin: auto;
+    padding: 1%;
+}
+
+.my-bookings{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: 700;
+
+}
+
+.booking-details{
+    height: 610px;
+    /* border-radius: 0px 0px 10px 10px; */
+    background-color: #d6e4f0;
+    overflow-y:scroll;
+}
+
+.data-box{
+    width: 80%;
+    margin: 30px auto;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #1e56a0;
+}
+
+.data{
+    width: 80%;
+    padding: 20px;
+    font-weight: 600;
 }
