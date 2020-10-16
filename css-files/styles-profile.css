@@ -42,23 +42,6 @@ d6e4f0
     font-size: 15px;
 }
 
-.slideshow {
-    margin: 30px auto;
-    position: relative;
-    width: 700px;
-    height: 469px;
-    background-color: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    padding: 17px 15px;
-}
-
-.slideshow-ele {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    position: absolute;
-}
-
 .container{
     border-radius: 5px;
     background-color: #d6e4ff ;
