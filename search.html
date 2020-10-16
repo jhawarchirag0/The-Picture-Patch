@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Template</title>
-    <link rel="stylesheet" href="./css-files/search.css">
+    <link rel="stylesheet" href="./css-files/styles_search.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Molle:400i|Pacifico|Manrope:wght@300|Nunito:wght@600|Righteous|Acme|Jost&display=swap" rel="stylesheet"> 
 </head>
@@ -16,10 +16,28 @@
     <div class="container">
         <div class="search-header">
             <div class="search-header1">Hire Proffesional Photographers</div>
-            <div class="search-header2">TO MAKE YOUR MOMENTS MEMORABLE</div>
+            <div class="search-header2">MAKE YOUR MEMORABLE MOMENTS CAPTURED</div>
         </div>
         <div class="search-box">
-            <div class="search-navbar"></div>
+            <div class="search-navbar">
+                <div class="filters">Filter</div>
+                <div class="category">
+                    <label class="category-name" for="event">Event : </label>
+                    <select id="event" name="event">
+                        <option value="wedding">Wedding</option>
+                        <option value="kids">Kids</option>
+                        <option value="fashion">Fashion and Portfolio</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="nature">Nature</option>
+                    </select>
+                </div>
+            </div>
+            <div class="result-box">
+                <div class="result-card"></div>
+                <div class="result-card"></div>
+                <div class="result-card"></div>
+                <div class="result-card"></div>
+            </div>
         </div>
     </div>
 </body>

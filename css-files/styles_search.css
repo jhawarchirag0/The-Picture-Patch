@@ -3,7 +3,8 @@
 1e56a0
 f6f6f6
 163172
-d6e4f0 
+d6e4f0
+
 -- Page Color --
 184d47 - Darkest
 bac964 - 2
@@ -56,21 +57,21 @@ html{
     text-decoration: none;
     color: #eeeeee;
     font-family: "Righteous",Montserrat, monospace;
-    font-size: 20px;
+    font-size: 16px;
     padding: 5px;
 }
 
 .container{
     width: 100%;
-    height: 1000px;
     margin: auto;
     background-color: #f7fbe1;
     padding-top: 70px;
+    display: flex;
+    flex-direction: column;
 }
 
 .search-header{
     width: 90%;
-    height: 200px;
     margin: auto;
     padding: 30px;
     box-sizing: border-box;
@@ -86,14 +87,73 @@ html{
 }
 
 .search-box{
-    width: 87%;
+    width: 80%;
     height: 80%;
-    margin: auto;
+    /* margin: auto; */
+    margin-left: 100px;
 }
 
 .search-navbar{
-    height: 70px;
-    border-radius: 40px;
+    display: flex;
+    margin-top: 20px;
+    height: 60px;
+    border-radius: 5px 5px 0px 0px;
     background-color: white;
     box-shadow: 2px 2px 7px #438a5e;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.filters{
+    width: 70px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.category{
+    height: 40px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.category-name{
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+select {
+    font: 500 'Nunito',sans-serif;
+    font-size: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    color: dimgray;
+    border: 1px solid dimgray;
+    border-radius: 5px;
+    outline: 0;
+    padding: 10px;
+}
+
+.result-box{
+    height: 700px;
+    font-size: 20px;
+    background-color: #f7f7ee;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 2px 2px 7px #438a5e;
+    /* padding: 40px 20px; */
+    margin-bottom: 80px;
+    overflow-y: scroll;
+}
+
+.result-card{
+    display: flex;
+    width: 95%;
+    height: 300px;
+    background-color: white;
+    margin: 30px auto;
+    box-shadow: 2px 2px 7px #438a5e;
+    border-radius: 15px;
 }
