@@ -1,25 +1,38 @@
-/* color scheme
+/* 
+--Old Color Scheme--
 1e56a0
 f6f6f6
 163172
 d6e4f0
+-- Page Color --
+184d47 - Darkest
+bac964 - 2
+b6eb7a - 3
+f7fbe1 - 4
+f7f7ee - 5
+
+--Navbar Color--
+373a40 - Darkest
+eeeeee - Light
 */
 
 html{
-    background-color: #f6f6f6;
+    background-color: #f7f7ee;
 }
 
 .Company{
     font-size: 60px;
-    font-family: 'Zhi Mang Xing', cursive;
+    padding: 15px;
+    font-family: 'Acme', sans-serif;
     text-align: center;
     width: 100%;
-    color: black;
-    background-color:#1e56a0;
+    color: #184d47;
+    background-color:#b6eb7a;
+    box-sizing: border-box;
 }
 .nav-bar{
     list-style-type: none;
-    background-color: black;
+    background-color: #373a40;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -41,14 +54,15 @@ html{
 
 .nav-text{
     text-decoration: none;
-    color: white;
+    color: #eeeeee;
     font-family: "Righteous",Montserrat, monospace;
-    font-size: 15px;
+    font-size: 16px;
+    padding: 5px;
 }
 
 .container{
     border-radius: 5px;
-    background-color: #d6e4f0;
+    background-color: #f7fbe1;
     padding: 10px 10px 10px 10px;
 }
 
@@ -68,7 +82,6 @@ html{
 .grid-item-1{
     grid-row: 1/span 2;
     grid-column: 1/span 2;
-    background-color: blueviolet;
     background-image: url("../images/gallery/wedding03.jpg");
     background-size: cover;
     opacity: 0.5;
@@ -77,7 +90,6 @@ html{
 .grid-item-2{
     grid-row: 1/span 2;
     grid-column: 3/span 2;
-    background-color:darksalmon;
     background-image: url("../images/gallery/kids03.jpg");
     background-size: cover;
     opacity: 0.5;
@@ -86,7 +98,6 @@ html{
 .grid-item-3 {
     grid-row: 1/span 2;
     grid-column: 5/span 2;
-    background-color: orchid;
     background-image: url("../images/gallery/fashion02.jpg");
     background-size: cover;
     opacity: 0.5;
@@ -95,7 +106,6 @@ html{
 .grid-item-4{
     grid-row: 3/span 2;
     grid-column:2/span 2;
-    background-color: chocolate;
     background-image: url("../images/gallery/commercial03.jpg");
     background-size: cover;
     opacity: 0.5;
@@ -105,7 +115,6 @@ html{
 .grid-item-5{
     grid-row: 3/span 2;
     grid-column: 4/span 2;
-    background-color: cyan;
     background-image: url("../images/gallery/nature01.jpg");
     background-size: cover;
     opacity: 0.5;
@@ -117,16 +126,6 @@ html{
     object-fit: cover;
 }
 
-.footer{
-    font-weight: 700;
-    font-size: 20px;
-    font-family: "Manrope:wght@300","Jost", cursive;
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-    color: black;
-    background-color:#163172;
-}
-.grid-container p{
+/* .grid-container p{
     opacity:1;
-}
+} */
