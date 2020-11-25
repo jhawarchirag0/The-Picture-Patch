@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Template</title>
-    <link rel="stylesheet" href="./css-files/styles-profile.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Molle:400i|Pacifico|Manrope:wght@300|Work+Sans|Righteous|Acme|Jost|Open+Sans:wght@600&display=swap" rel="stylesheet"> 
-</head>
 <?php
 
 // Connecting to MongoDB and retriving previous bookings
@@ -23,8 +15,42 @@ $query2 = 'SELECT * FROM userdetails where Username = "' . $username . '"';
 mysqli_query($db, $query2) or die('Error querying database.');
 $result = mysqli_query($db, $query2);
 $row = mysqli_fetch_array($result);
-?>
 
+// Update info
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $fn=$_POST["fn"];
+    $ln=$_POST["ln"];
+    $username=$_POST["username"];
+    $emailid=$_POST["emailid"];
+    $address=$_POST["address"];
+    $country=$_POST["country"];
+    $city=$_POST["city"];
+    $contact=$_POST["contact"];
+
+    $order = "UPDATE userdetails 
+        set FirstName='$fn', LastName='$ln' , EmailId='$emailid' , Addrss='$address' , City='$city' , Country='$country' , Contact='$contact'
+        where Username='$username' ";
+
+    $result = mysqli_query($db,$order);
+    if($result){
+        echo "<script>alert('Updated Succesfully')</script>";
+    } 
+    else{
+        echo "<script>alert('Update Failed')</script>";
+    }
+
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Template</title>
+    <link rel="stylesheet" href="./css-files/styles-profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Molle:400i|Pacifico|Manrope:wght@300|Work+Sans|Righteous|Acme|Jost|Open+Sans:wght@600&display=swap" rel="stylesheet"> 
+</head>
 <body>
     <header class="Company">The Picture Patch</header>
     <ul class = "nav-bar">
@@ -42,7 +68,7 @@ $row = mysqli_fetch_array($result);
             </div>
         </div>
         <div class="profile-box">
-            <div class="profile-settings">
+            <form class="profile-settings" method="POST" action="">
                 <div class="card">
                     <div class="my-account">My Account</div>
                     <div class="update-button">
@@ -55,21 +81,21 @@ $row = mysqli_fetch_array($result);
                         <div class="part">
                             <div class="feild">
                                 <div class="value-title">First Name</div>
-                                <input type="text" class="value-box" value="<?php echo $row["FirstName"] ?>">
+                                <input type="text" class="value-box" name="fn" value="<?php echo $row["FirstName"] ?>">
                             </div>
                             <div class="feild">
                                 <div class="value-title">Last Name</div>
-                                <input type="text" class="value-box" value="<?php echo $row["LastName"] ?>">
+                                <input type="text" class="value-box" name="ln" value="<?php echo $row["LastName"] ?>">
                             </div>
                         </div>
                         <div class="part">
                             <div class="feild">
                                 <div class="value-title">Username</div>
-                                <input type="text" class="value-box" value="<?php echo $row["Username"] ?>">
+                                <input type="text" class="value-box" name="username" value="<?php echo $row["Username"] ?>" readonly>
                             </div>
                             <div class="feild">
                                 <div class="value-title">Email Address</div>
-                                <input type="text" class="value-box" value="<?php echo $row["EmailId"] ?>">
+                                <input type="text" class="value-box" name="emailid" value="<?php echo $row["EmailId"] ?>">
                             </div>
                         </div>
                     </div>
@@ -81,27 +107,27 @@ $row = mysqli_fetch_array($result);
                         <div class="part">
                             <div class="feild">
                                 <div class="value-title">Address</div>
-                                <input type="text" class="value-box" value="<?php echo $row["Address"] ?>">
+                                <input type="text" class="value-box" name="address" value="<?php echo $row["Addrss"] ?>">
                             </div>
                             <div class="feild">
                                 <div class="value-title">Country</div>
-                                <input type="text" class="value-box" value="<?php echo $row["Country"] ?>">
+                                <input type="text" class="value-box" name="country" value="<?php echo $row["Country"] ?>">
                             </div>
                         </div>
                         <div class="part">
                             <div class="feild">
                                 <div class="value-title">City</div>
-                                <input type="text" class="value-box" value="<?php echo $row["City"] ?>">
+                                <input type="text" class="value-box" name="city" value="<?php echo $row["City"] ?>">
                             </div>
                             <div class="feild">
                                 <div class="value-title">Contact</div>
-                                <input type="text" class="value-box" value="<?php echo $row["Contact"] ?>">
+                                <input type="text" class="value-box" name="contact" value="<?php echo $row["Contact"] ?>">
                             </div>
                         </div>
                     </div>
                     <br>
                 </div>
-            </div>
+            </form>
             <div class="booking-data">
                 <div class="card card2">
                     <div class="my-bookings">Previous Bookings</div>
@@ -123,12 +149,10 @@ $row = mysqli_fetch_array($result);
                             $path = $doc->_id."_".$i.".png";
                             imagepng($image, $doc->_id."_".$i.".png");
                             echo "<img src='".$path."' width='65' height='50' <br> ";
-                            // unlink($path);
                         }
                         echo '</div>';
                         echo '</div>';
                         echo '</div>';
-                    
                     }
                     ?>
                     </div>
