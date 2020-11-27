@@ -2,7 +2,7 @@
 session_start();
 
 // Connecting to phpMyAdmin to retrive user details
-$username = "jesse7";
+$username = $_SESSION["username"];
 $db = mysqli_connect('localhost','root','','picture_patch') or 
 die('Error connecting to MySQL server.');
 $query2 = 'SELECT * FROM userdetails where Username = "' . $username . '"';
@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="profile-name">Hello <?php echo $row["FirstName"] ?></div>
             </div>
             <div class="image-box">
-                <img src="https://demos.creative-tim.com/argon-dashboard/assets/img/theme/team-4.jpg" class="profile-image" alt="Profile Picture">
+                <img src="./images/profile.jpg" class="profile-image" alt="Profile Picture">
             </div>
         </div>
         <div class="profile-box">

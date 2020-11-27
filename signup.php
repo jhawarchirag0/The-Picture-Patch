@@ -143,6 +143,9 @@
                 echo "<script>alert('Something went wrong.Please try again!');</script>";
             }
             mysqli_close($db);
+            
+            $_SESSION["username"] = $username;
+            header('Location: home.php');
         }
     }
 
@@ -215,13 +218,10 @@
 
             <input type='Password' id="repss" name="repss" placeholder="Retype Password" />
             <div class="error"> <?php echo $repssErr;?></div><br>
-            <!-- <center>
-                <p id="pass-req">Password must contain min 8 characters, 1 uppercase, 1 lowercase, 1 number and 1 special character</p>
-            </center> -->
             <input type="submit" class="submit" name="submit" align="center" value="Sign up"> <br>
         </form>
         <h2 class='redirect-sign-in' align='center'> 
-            <a class='redirect2' href='./login.html' style="text-decoration: none">Already joined?Sign In</a>
+            <a class='redirect2' href='./login.php' style="text-decoration: none">Already joined?Sign In</a>
         </h2 >
     </div>
 </body>
