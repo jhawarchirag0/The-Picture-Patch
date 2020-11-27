@@ -1,11 +1,5 @@
 <?php
-
-// Connecting to MongoDB and retriving previous bookings
-$connection = new MongoDB\Driver\Manager("mongodb://localhost:27017");
-$customer = "Jesse";
-$filter =  ['Customer' => $customer];
-$query1 = new MongoDB\Driver\Query($filter, []);
-$rows   = $connection->executeQuery('picture_patch.bookings', $query1);
+session_start();
 
 // Connecting to phpMyAdmin to retrive user details
 $username = "jesse7";
@@ -15,6 +9,13 @@ $query2 = 'SELECT * FROM userdetails where Username = "' . $username . '"';
 mysqli_query($db, $query2) or die('Error querying database.');
 $result = mysqli_query($db, $query2);
 $row = mysqli_fetch_array($result);
+
+// Connecting to MongoDB and retriving previous bookings
+$connection = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+$customer = $row["FirstName"];
+$filter =  ['Customer' => $customer];
+$query1 = new MongoDB\Driver\Query($filter, []);
+$rows   = $connection->executeQuery('picture_patch.bookings', $query1);
 
 // Update info
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -46,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Template</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="./css-files/styles-profile.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Molle:400i|Pacifico|Manrope:wght@300|Work+Sans|Righteous|Acme|Jost|Open+Sans:wght@600&display=swap" rel="stylesheet"> 
@@ -54,9 +55,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <header class="Company">The Picture Patch</header>
     <ul class = "nav-bar">
-        <li class = "nav-element nav-link"><a class = "nav-text" href = "home.html">Home</a></li>
-        <li class = "nav-element nav-link"><a class = "nav-text" href = "gallery.html">Catalogue</a></li>
-        <li class = "nav-element nav-link"><a class = "nav-text" href = "./signup.html">Sign Up/Log in</a></li>
+        <li class = "nav-element nav-link"><a class = "nav-text" href = "home.php">Home</a></li>
+        <li class = "nav-element nav-link"><a class = "nav-text" href = "gallery.php">Catalogue</a></li>
+        <?php
+            if(isset($_SESSION["username"])){
+                echo '<li class = "nav-element nav-link"><a class = "nav-text" href = "profile.php">Dashboard</a></li>';
+                echo '<li class = "nav-element nav-link"><a class = "nav-text" href = "logout.php">Log Out</a></li>';
+            }
+            else{
+                echo '<li class = "nav-element nav-link"><a class = "nav-text" href = "signup.php">Sign Up/Log in</a></li>';
+            }
+        ?>
     </ul>
     <div class="container">
         <div class="name-and-image">

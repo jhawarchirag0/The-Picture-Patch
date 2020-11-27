@@ -157,3 +157,74 @@ select {
     box-shadow: 2px 2px 7px #438a5e;
     border-radius: 15px;
 }
+
+.profile-image{
+    width: 20%;
+    margin: 25px;
+}
+
+.align-image{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px black;
+    vertical-align: middle;
+}
+
+.profile-info{
+    width: 68%;
+    /* background-color: #438a5e; */
+    padding: 30px;
+}
+
+.photographer-name{
+    height: 17%;
+    /* background-color: #b6eb7a; */
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.photographer-info{
+    height: 50%;
+    /* background-color: #b6eb7a; */
+}
+
+.info{
+    font-size: 22px;
+}
+
+.update-button{
+    padding-right: 20px;
+}
+
+.search-button{
+    margin-left: 100px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 15px;
+    background-color: #bac964;
+    /* color: #CCFFFF; */
+    font-weight: 600;
+    padding: 5px 10px;
+    border: none;
+    outline:none;
+}
+
+.update-profile{
+    width: 100px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 15px;
+    background-color: #bac964;
+    /* color: #CCFFFF; */
+    font-weight: 600;
+    padding: 5px 10px;
+    border: none;
+    outline:none;
+}
+
+.update-profile:active {
+    transform: translateY(1px);
+}
